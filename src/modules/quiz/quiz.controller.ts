@@ -18,6 +18,8 @@ export class QuizController {
     return this.quizService.getAllQuiz();
   }
 
+  @Get('')
+
   @Post('/')
   @HttpCode(200)
   @UsePipes(ValidationPipe)
